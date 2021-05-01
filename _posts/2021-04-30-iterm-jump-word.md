@@ -1,7 +1,7 @@
 ---
 title: Jump forward, backward and delete a word in iTerm2
 author: Sanh Doan
-date: 2021-04-30 11:33:00 +0800
+date: 2021-04-30 10:30:00 +0700
 categories: [iTerm2]
 tags: [iTerm2]
 ---
