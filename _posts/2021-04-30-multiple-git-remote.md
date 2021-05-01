@@ -36,10 +36,13 @@ git remote set-url --add --push all git@gitlab.com:dpsanh2348/test-b.git
 ```
 
 ##### Result
-- PUSH - Now you can push to 2 repos at the same time
+- CHECK: `git remote -v`
+![git-multiple-remote-all](https://i.imgur.com/X8GyHWE.png)
+- PUSH: Now you can push to 2 repos at the same time
 ```bash
 git push all <your branch>
 ```
+![git-multiple-remote-push-all](https://i.imgur.com/NaGmZfq.png)
 - PULL: can not pull from multiple remotes
 - FETCH: can fetch all with `git fetch --all`
 
@@ -51,6 +54,8 @@ Note: we can use existing `origin` remote for github
 git remote add github git@github.com:PhuSanh/test-a.git
 git remote add gitlab git@gitlab.com:dpsanh2348/test-b.git
 ```
+- CHECK: `git remote -v`
+![git-multiple-remote-check](https://i.imgur.com/gufiuOQ.png)
 - PUSH
 ```bash
 git push origin <your branch>
