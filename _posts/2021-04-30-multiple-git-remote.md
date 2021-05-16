@@ -7,7 +7,7 @@ tags: [Git]
 ---
 
 ## Context
-You want to working with multiple Git repositories on one local source code
+You want to working with multiple Git repositories on one local source code.
 
 ## Config
 For example: There are 2 repos
