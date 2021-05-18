@@ -31,7 +31,7 @@ Create a channel so that your bot can send alert/notification to telegram
 3. Look at the URL and find the part that looks like `c1234567890_1234567890123456789`
 4. Get the string before underscore --> `c1234567890`
 5. Remove the prefixed letter --> `1234567890`
-6. Add prefix with a `-100` --> your channel id is `-10012112121212`
+6. Add prefix with a `-100` --> your channel id is `-1001234567890`
 
 
 Now you can use your
