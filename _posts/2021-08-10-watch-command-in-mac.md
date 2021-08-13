@@ -2,7 +2,7 @@
 title: Watch command in MacOS terminal
 author: Sanh Doan
 date: 2021-08-10 18:03:00 +0700
-categories: [Termial]
+categories: [Terminal]
 tags: [Terminal, MacOS]
 ---
 
