@@ -26,7 +26,7 @@ Create a channel so that your bot can send alert/notification to telegram
 ![telegram-set-bot-admin](https://i.imgur.com/mKVL2q1.png)
 
 ### 3.2 How to get your channel id
-1. Go to https://web.telegram.org
+1. Go to [here](https://web.telegram.org?target=_blank)
 2. Click on your channel
 3. Look at the URL and find the part that looks like `c1234567890_1234567890123456789`
 4. Get the string before underscore --> `c1234567890`

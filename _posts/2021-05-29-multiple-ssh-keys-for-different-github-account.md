@@ -45,5 +45,12 @@ Then go to Github setting and paste it in `Key` input
 Note: you can change your config for repo by
 ```bash
 $ git config user.name "Sanh Doan"
-$ git config user.email "dpsanh@troodonlabs.com" 
+$ git config user.email "dpsanh@troodonlabs.com"
 ```
+
+### Note: After restart/start device, you need to add ssh-agent again
+```bash
+$ eval $(ssh-agent)
+$ ssh-add ~/.ssh/id_rsa_myteamprivate
+```
+Or you can add these commands to ~/.zshrc so that it will run automatically when device is restarted/started

@@ -6,7 +6,7 @@ categories: [Google]
 tags: [Google]
 ---
 
-### 1. Visit https://www.google.com/account/about/?hl=en-US
+### 1. Visit [here](https://www.google.com/account/about/?hl=en-US?target=_blank)
 
 ### 2. Click the `Create an Account` button
 ![create-an-account](https://imgur.com/xZljFFt.png)
@@ -14,5 +14,5 @@ tags: [Google]
 ### 3. Click `Use my current email address instead`
 ![use-my-email](https://imgur.com/JvlbB7q.png)
 
-### 4. Fill the information and follow Google processes
+### 4. Fill the information and follow Google next steps
 ![fill-info](https://imgur.com/hqoVrhX.png)
