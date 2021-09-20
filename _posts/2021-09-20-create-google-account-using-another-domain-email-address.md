@@ -1,7 +1,7 @@
 ---
 title: Create a Google account using another domain email
 author: Sanh Doan
-date: 2021-09-20 19:00:00 +0700
+date: 2021-09-20 18:20:00 +0700
 categories: [Google]
 tags: [Google]
 ---
