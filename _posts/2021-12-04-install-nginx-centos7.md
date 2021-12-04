@@ -1,9 +1,9 @@
 ---
-title: Install docker in Centos 7
+title: Install nginx in Centos 7
 author: Sanh Doan
 date: 2021-12-04 10:44:00 +0700
-categories: [Server, Centos]
-tags: [Server, Docker, Centos]
+categories: [Nginx, Centos]
+tags: [Nginx, Centos]
 ---
 
 ### 1. (Optional) Run with sudo user
