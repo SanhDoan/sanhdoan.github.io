@@ -2,17 +2,17 @@
 title: Leetcode 121 - Best Time to Buy and Sell Stock - Easy
 author: Sanh Doan
 date: 2021-12-04 10:44:00 +0700
-categories: [Algorithm]
+categories: [Algorithm, Two Pointers]
 tags: [Algorithm, Two Pointers, easy]
 ---
 
 ### Leetcode link
 
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
 Cho 1 mảng các số nguyên `prices`, với số `prices[i]` tương ứng giá stock của ngày thứ `i`. Hãy tính ra giá lợi nhuận cao nhất bằng cách chọn 1 ngày để mua stock và chọn 1 ngày (lớn hơn ngày mua) để bán stock và trừ 2 giá trị đó với nhau
 
-ví dụ:
-prices = [6,2,4,3,1,3,2,5]
+Ví dụ: prices = [6,2,4,3,1,3,2,5]
 
 ![leetcode121-diagram](/assets/img/pages/leetcode121-diagram.png)
 
@@ -26,9 +26,12 @@ prices = [6,2,4,3,1,3,2,5]
 |  6   |  4   |   6   |  1  |  2  |   1    |     2      |
 |  7   |  4   |   7   |  1  |  5  |   4    |     4      |
 
+Time complexity: O(n)
+Space complexity: O(1)
+
 # Code Golang
 
-```
+```go
 func maxProfit(prices []int) int {
   l := 0
   r := 1
@@ -62,7 +65,7 @@ func max(a, b int) int {
 
 # Code Python
 
-```
+```python
 def maxProfit(self, prices: List[int]) -> int:
   l = 0
   r = 1
