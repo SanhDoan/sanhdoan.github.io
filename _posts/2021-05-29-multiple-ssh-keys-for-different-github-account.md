@@ -7,50 +7,61 @@ tags: [Git, SSH]
 ---
 
 For example: you have a repo in private organization `myteamprivate` with url `git@github.com:myteamprivate/repo-api.git`
+
 ## 1. Create ssh key on your machine
+
 ```bash
 $ ssh-keygen -t rsa -C "your_email@youremail.com"
 ```
-- Your email can the same email with other accounts
+
+- Your email can be the same email with other accounts
 - File name format: `id_rsa_[private organization]`
-![ssh-keygen](https://i.imgur.com/ENKFiuk.png)
+  ![ssh-keygen](https://i.imgur.com/ENKFiuk.png)
 
-## 2. Add key
+## 2. Modify ssh config
+
 ```bash
-$ ssh-add ~/.ssh/id_rsa_myteamprivate
+$ vi ~/.ssh/config
 ```
 
-## 3. Modify ssh config
-```bash
-$ cd ~/.ssh
-$ vi config
-```
 Then add below config
-```
-# myteamprivate account
-Host github.com-myteamprivate
+
+```bash
+# "myteam" can be whatever, it'll be used when you clone repo
+Host github.com-myteam
 	HostName github.com
-	User git
+  AddKeysToAgent yes
 	IdentityFile ~/.ssh/id_rsa_myteamprivate
+  IdentitiesOnly yes
+	User git
 ```
 
-## 4. Copy public key and paste it in Github SSH Key
+## 3. Copy public key and paste it in Github SSH Key
+
 ```bash
 $ cat ~/.ssh/id_rsa_myteamprivate.pub | pbcopy
 ```
+
 Then go to Github setting and paste it in `Key` input
 ![paste-ssh-github](https://i.imgur.com/mlIMWeH.png)
 
 ### Now you can clone the repo with SSH
+
+```bash
+$ git clone git@github.com-myteam:myteamprivate/repo-api.git
+# "myteam" here is what you defined in ssh config Host
+```
+
 Note: you can change your config for repo by
+
 ```bash
 $ git config user.name "Sanh Doan"
 $ git config user.email "dpsanh@troodonlabs.com"
 ```
 
-### Note: After restart/start device, you need to add ssh-agent again
+### Note: If the ssh-key not auto added, you need to add ssh-agent manually
+
 ```bash
 $ eval $(ssh-agent)
 $ ssh-add ~/.ssh/id_rsa_myteamprivate
 ```
-Or you can add these commands to ~/.zshrc so that it will run automatically when device is restarted/started
