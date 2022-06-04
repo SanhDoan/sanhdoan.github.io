@@ -13,8 +13,9 @@ tags: [Frontend, NextJS]
 ## SSG - Static side generate
 
 - The HTML is generated at build-time and is reused for each request.
-- Use CDN for serving static file faster
-  <img src="/assets/img/pages/ssg.png" style="max-width:500px" width="100%">
+- Use CDN for serving static file faster <br />
+
+<img src="/assets/img/pages/ssg.png" style="max-width:500px" width="100%">
 
 ## CSR - Client side rendering
 
