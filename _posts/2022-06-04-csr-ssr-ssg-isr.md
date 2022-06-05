@@ -15,7 +15,7 @@ tags: [Frontend, NextJS]
 - The HTML is generated at build-time and is reused for each request.
 - Use CDN for serving static file faster <br />
 
-<img src="/assets/img/pages/ssg.png" style="max-width:500px" width="100%">
+<img src="/assets/img/pages/ssg.png" style="max-width:600px" width="100%">
 
 ## CSR - Client side rendering
 
