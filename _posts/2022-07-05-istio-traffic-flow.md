@@ -6,7 +6,7 @@ categories: [Devops, Istio]
 tags: [Devops, Istio]
 ---
 
-## Vietnamese
+## English
 
 1. User visit a website
 2. Request come to Istio Gateway
