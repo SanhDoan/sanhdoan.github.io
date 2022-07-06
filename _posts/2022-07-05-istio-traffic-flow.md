@@ -6,6 +6,8 @@ categories: [Devops, Istio]
 tags: [Devops, Istio]
 ---
 
+![istio_traffic_flow](/assets/img/pages/istio_traffic_flow.jpg)
+
 ## English
 
 1. User visit a website
