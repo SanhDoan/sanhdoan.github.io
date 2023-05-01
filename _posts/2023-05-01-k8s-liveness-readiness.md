@@ -8,15 +8,15 @@ tags: [Devops, K8s]
 
 Tiếng Việt phía dưới (Vietnamese below)
 
-# English
-## Liveness
+## English
+### Liveness
 Liveness is used to check if a pod is working or not. If the pod does not work, K8s will delete that pod and recreate another pod.
 
-## Readiness
+### Readiness
 Readiness is used to check if a pod is ready so that K8s will start sending request to the pod. If Readiness probe failed, it will stop sending request until it is ready.
 
-## Probes
-### HTTP probe
+### Probes
+#### 1. HTTP probe
 This is the most common probe. K8s ping to the route (api) periodically. If the response is 200-300 status code, the pod is marked as healthy
 ```yaml
 apiVersion: apps/v1
@@ -37,7 +37,7 @@ spec:
         # Options ...
 ```
 
-### Command probe
+#### 2. Command probe
 K8s execute a command in your container periodically. If the result is 0 (zero), container is marked as healthy. In contrast, it is marked as unhealthy.
 ```yaml
 livenessProbe:
@@ -47,7 +47,7 @@ livenessProbe:
       - ./healthy-check.sh
 ```
 
-### TCP probe
+#### 3. TCP probe
 K8s try to create a TCP connection on configured port. If connection is success, a pod is marked as healthy.
 ```yaml
 livenessProbe:
@@ -55,7 +55,7 @@ livenessProbe:
     port: 8080
 ```
 
-## Configuration options
+### Configuration options
 ```yaml
 readiness:
   initialDelaySeconds: 5
@@ -72,17 +72,17 @@ readiness:
   successThreshold: 1
 ```
 
-##############################################
+***
 
-# Vietnamese
-## Liveness
+## Vietnamese
+### Liveness
 Liveness dùng để kiểm tra 1 pod có đang hoạt động hay không. Nếu pod không hoạt động thì K8s sẽ xóa pod đó và tạo 1 pod mới
 
-## Readiness
+### Readiness
 Readiness dùng để kiểm tra 1 pod đã sẵn sàng chưa để gửi lưu lượng truy cập đến pod đó. Nếu Readiness kiểm tra không thành công thì sẽ tạm ngưng gửi request đến pod đến khi pod đó sẵn sàng
 
-## Các loại probe
-### HTTP probe
+### Các loại probe
+#### 1. HTTP probe
 Đây là loại probe phổ biến nhất. K8s sẽ định kì ping đến đường dẫn được chỉ định, nếu response trong phạm vi 200 - 300 thì pod sẽ được xem là đang healthy
 ```yaml
 apiVersion: apps/v1
@@ -103,7 +103,7 @@ spec:
         # Options...
 ```
 
-### Command probe
+#### 2. Command probe
 K8s sẽ chạy 1 command bên trong container. Nếu response của command bằng 0, container sẽ được đánh dấu là success (healthy). Ngược lại là unhealthy
 ```yaml
 livenessProbe:
@@ -113,7 +113,7 @@ livenessProbe:
       - ./healthy-check.sh
 ```
 
-### TCP probe
+#### 3. TCP probe
 K8s sẽ cố gắng thiết lập một kết nối TCP trên port được chỉ định. Nếu nó có thể thiết lập kết nối, thì Pod được coi là healthy, ngược lại sẽ là một pod unhealthy.
 ```yaml
 livenessProbe:
@@ -121,7 +121,7 @@ livenessProbe:
     port: 8080
 ```
 
-## Configuration options
+### Configuration options
 ```yaml
 readiness:
   initialDelaySeconds: 5
