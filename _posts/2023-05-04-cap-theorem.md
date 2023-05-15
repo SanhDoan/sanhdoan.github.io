@@ -1,7 +1,7 @@
 ---
 title: CAP Theorem
 author: Sanh Doan
-date: 2023-05-04 23:300:00 +0700
+date: 2023-05-04 23:30:00 +0700
 categories: [Distributed system]
 tags: [Distributed system]
 ---
